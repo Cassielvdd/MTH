@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain High</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/940b3a720e.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+    
+<div class="header">
+    <header>
+    <ul>
+        <li><a href="#home"><h2>Mountain High</h2></a></li>
+        <div class="user">
+        <li style="float:right"><a class="active" href="Login.html">
+            <i class="fas fa-user"></i>
+        </a></li>
+        </div>  
+      </ul>
+    </header>
+</div>
+<div class="titulo">
+    <section>
+    <div class="background">
+    <h1>Acesse Mountain High e faça sua reserva</h1>
+    <a href="/Login.html"><button class="bt-titu" type="button"> Buscar <i class="fas fa-search"></i></button></a>
+    </section>
+</div>
+<div class="cidades">
+<h1>Cidades Disponiveis</h1>
+</div>
+<section>
+    <div class="clientes">
+        <main class="cards">
+            <section class="card contact">
+                <div class="icon">
+                    <!--<img src=".image/Guaramiranga-removebg-preview.png" alt="Contact us.">-->
+                </div>
+                <h3>Guaramiranga</h3>
+                <span>Hospede-se em Guaramiranga clicando aqui </span>
+                <button>Learn More</button>
+            </section>
+            <section class="card shop">
+                <div class="icon">
+                     <!--<img src="assets/Bag.png" alt="Shop here.">-->
+                </div>
+                <h3>Pacoti</h3>
+                <span>Hospede-se em Pacoti clicando aqui</span>
+                <button>Learn More</button>
+            </section>
+            <section class="card about">
+                <div class="icon">
+                     <!--<img src="assets/Play.png" alt="About us.">-->
+                </div>
+                <h3>Palmacia</h3>
+                <span>Hospede-se em Guaramiranga clicando aqui</span>
+                <button>Learn More</button>
+            </section>
+        </main>
+    </div>
+</section>
+<section>
+    <!--<div class="about">
+        <h1>Sobre</h1>
+        <p>Mounatin High é uma plataforma de hospedagem cituada no maciço de baturite,<br> com o proposito de aumentar o turismo da região.A plataforma foi desenvolvida <br>pela StartUP de desenvolvimento Web e Mobile NuG Studios</p>
+         <img style="float: right;" src="/.image/Design_sem_nome-removebg-preview.png">
+    </div>-->
+</section>
+<section>
+    <div class="footer">
+        <p>&copy <i>Copyright <a href="#">Not Ungry Studios 2022</a></i></p>
+    </div>
+</section>
+
+
+
+
+
+    <script>
+        function typeWriter(elemento){
+            const textarray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textarray.forEach((letra, i)=> {
+                setTimeout(function(){
+                    elemento.innerHTML += letra
+                }, 75 * i)
+            });
+        }
+        const titulo = document.querySelector('h1');
+        console.log(titulo)
+        typeWriter(titulo);
+    </script>
+</div>
+</body>
+</html>

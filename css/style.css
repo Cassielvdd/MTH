@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('/Outfit-VariableFont_wght.ttf');
+}
+
+*{
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #04a067, #31926e);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/image/lake-1681485.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+main.container {
+    background: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #04a067, #31926e);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #04a067, #31926e);
+}
+form input[type="submit"]:focus{
+    color: #014040;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+/*adakdhasd*/
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #068BBF, #014040);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-field.twitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+}
+
+.footer .social-field.facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+.footer .social-field.google{
+    background: linear-gradient(to right, #4285f4, #0f9d58, #f48400, #db4437);
+}
+.footer .social-field.google:hover{
+    transition: all 0.5s ease;
+    background: linear-gradient(to left , #4285f4, #0f9d58, #f48400, #db4437);
+    letter-spacing: 0.5px;
+}
+.footer .social-field.social-field.facebook:hover{
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+
+}
+.forgot-pass p{
+    padding-top: 20px;
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.7);
+}
+.forgot-pass p:hover{
+    color: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+.forgot-pass a{
+    text-decoration: none;
+}
+.register{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 1rem;
+    background: linear-gradient(to right,#04a067, #31926e);
+    align-content: center;
+    justify-content: center;
+    margin-left: 27px;
+    text-align: center;
+    
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+.register i{
+    margin: 0 0.5rem;
+    font-family:'Outfit';
+}
+.footer .register:hover{
+    letter-spacing: 0.3s;
+}
